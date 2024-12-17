@@ -82,3 +82,10 @@ async def total_info(message: types.Message):
     print(user_data)
     del user_data[user_id]
     print(user_data)
+
+
+async  def main():                    
+    await dp.start_polling(bot)   
+
+print('The bot is running')            
+asyncio.run(main())
